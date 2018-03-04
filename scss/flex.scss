@@ -1,0 +1,178 @@
+// Portfolio section with flexbox
+.codepen{
+  width: 25px;
+  opacity: .8;
+  &:hover{
+    opacity: 1;
+  }
+}
+.projects {
+  box-shadow: 0px 20px 30px rgba(0, 0, 0,0.5);
+  position: relative;
+  z-index: 2;
+  color: $ggrey;
+  text-align: center;
+  > p:first-of-type{
+    margin-bottom: 0;
+  }
+  i{
+    color: black;
+    vertical-align: middle;
+    opacity: .6;
+    transition: all .4s;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  h2{
+    font-weight: 700;
+    color: black;
+  }
+  hr{
+    opacity: 0;
+  }
+}
+
+.flex{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  a {
+    color: white;
+  }
+  .project{
+    //max-height: 400px;
+    opacity: 0;
+    color: white;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: auto;
+    }
+    &:hover{
+      cursor: pointer;
+      position: relative;
+      .blackSqr{
+        height: 100%;
+        .blackStripe{
+          opacity: 1;
+        }
+      }
+    }
+    .blackSqr{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width:100%;
+      height:0;
+      background-color: rgba(0, 0, 0, 0.3);
+      @include transition(height .4s);
+    }
+    .blackStripe{
+      vertical-align: middle;
+      line-height: 0px;
+      text-align:center;
+      vertical-align: middle;
+      padding-top: 10px;
+      opacity: 0;
+      height: auto;
+      z-index: 3;
+      position: absolute;
+      top: 40%;
+      height: 25%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+  .one{
+    background-image: url("../img/projekty/login_mini.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+  }
+  .two{
+    background-image: url("../img/projekty/dash_mini.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 600px;
+  }
+  .three{
+    background-image: url("../img/projekty/gry_mini.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 600px;
+  }
+  .four{
+    background-image: url("../img/projekty/zbych_mini.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+  }
+  .five{
+    background-image: url("../img/projekty/fgc_mini.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+  }
+  .six{
+    background-image: url("../img/projekty/fly.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 600px;
+  }
+  .seven{
+    background-image: url("../img/projekty/organic_mini.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 1020px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1100px){
+  .flex{
+    .project{
+      max-width: 400px;
+    }
+    .about{
+      text-align: center;
+      .lineOne{
+        background-image: linear-gradient(to right, rgba(116, 116, 116, 0), rgba(116, 116, 116, 0.75), rgba(116, 116, 116, 0));
+      }
+      h2{
+        text-align: center;
+      }
+      p{
+        padding-left-right: 20px;
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 600px){
+  .projects{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .project{
+    max-width: 300px;
+  }
+  .about{
+    text-align: center;
+    .lineOne{
+      background-image: linear-gradient(to right, rgba(116, 116, 116, 0), rgba(116, 116, 116, 0.75), rgba(116, 116, 116, 0));
+    }
+    h2{
+      text-align: center;
+    }
+    p{
+      padding-left-right: 20px;
+      text-align: center;
+    }
+  }
+}
