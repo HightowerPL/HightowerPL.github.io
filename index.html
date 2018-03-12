@@ -12,16 +12,14 @@
   <body >
     <!-- Navigation bar -->
       <!-- test nav -->
-      <div class="ham-icon row">
-        <div class="icon-wrapper">
+      <div class="ham-icon">
           <div class="hamx">
             <hr class="one">
             <hr class="two">
             <hr class="three">
           </div>
-        </div>
       </div>
-      <div class="test-nav">
+      <div class="menu-bg">
         <ul class="menu">
           <li class="menuItem"><a href="#aboutme"><p class="item">O MNIE</p></a></li>
           <li class="menuItem"><a href="#portfolio"><p class="item">PORTFOLIO</p></a></li>
@@ -71,27 +69,26 @@
 <!-- Pause between "About me" and "Portfolio" -->
         <div class="pause">
           <div class="row">
-            <h4>NARZĘDZIA I TECHNOLOGIE</h4>
-
+            <h4 class="fade-in">NARZĘDZIA I TECHNOLOGIE</h4>
           </div>
-          <img class="logo rellax" data-rellax-speed="4" src="img/HTML5.png" alt="HTML5"/>
-          <img class="logo rellax" data-rellax-speed="3" src="img/CSS3.png"  alt="CSS3"/>
-          <img class="logo rellax" data-rellax-speed="2" src="img/js.png" alt="JS"/>
-          <img class="logo rellax pacity7" data-rellax-speed="2" src="img/photoshop.png" alt="photoshop"/>
-          <img class="logo rellax oacity7" data-rellax-speed="4" src="img/illustrator.png" alt="illustrator"/>
-          <img class="logo rellax" data-rellax-speed="1" src="img/github.png" alt="github"/>
-          <img class="logo rellax opacty7" data-rellax-speed="1" src="img/jQuery.png" alt="jquery"/>
-          <img class="logo rellax" data-rellax-speed="2" src="img/found6.png" alt="foundation6"/>
-          <img class="logo rellax opacty7" data-rellax-speed="5" src="img/gulp.png" alt="gulp"/>
-          <img class="logo rellax" data-rellax-speed="3" src="img/sass.png" alt="sass"/>
-          <img class="logo rellax" data-rellax-speed="5" src="img/Vue.png" alt="Vue"/>
-          <img class="logo rellax" data-rellax-speed="6" src="img/npm.png" alt="npm"/>
+          <img class="logo fade-in" src="img/HTML5.png" alt="HTML5"/>
+          <img class="logo fade-in" src="img/CSS3.png"  alt="CSS3"/>
+          <img class="logo fade-in" src="img/js.png" alt="JS"/>
+          <img class="logo fade-in" src="img/photoshop.png" alt="photoshop"/>
+          <img class="logo fade-in" src="img/illustrator.png" alt="illustrator"/>
+          <img class="logo fade-in" src="img/github.png" alt="github"/>
+          <img class="logo fade-in" src="img/jQuery.png" alt="jquery"/>
+          <img class="logo fade-in" src="img/found6.png" alt="foundation6"/>
+          <img class="logo fade-in" src="img/gulp.png" alt="gulp"/>
+          <img class="logo fade-in" src="img/sass.png" alt="sass"/>
+          <img class="logo fade-in" src="img/Vue.png" alt="Vue"/>
+          <img class="logo fade-in" src="img/npm.png" alt="npm"/>
         </div>
 <!--"Portfolio" panel -->
         <section class="projects" id="portfolio" data-magellan-target="portfolio">
           <h2 class="slide-in-up">PORTFOLIO</h2><hr class="fade-in" /><br/>
-          <p class="fade-in">Poniżej prezentuję kilka moich dotychczasowych prac. Po szczegółowy kod zapraszam na GitHub'a &nbsp;<a href="https://github.com/HightowerPL" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p>
-          <p class="fade-in">Z kolei moje nieco mniejsze projekty można również zobaczyć na codepen'ie.&nbsp;<a href="https://codepen.io/JSnopkiewicz/" target="_blank"><img class="codepen" src="img/pen.png" alt="codepen"></a></p><br/>
+          <p class="slide-in-left">Poniżej prezentuję kilka moich dotychczasowych prac. Po szczegółowy kod zapraszam na GitHub'a &nbsp;<a href="https://github.com/HightowerPL" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></p>
+          <p class="slide-in-right">Z kolei moje nieco mniejsze projekty można również zobaczyć na codepen'ie.&nbsp;<a href="https://codepen.io/JSnopkiewicz/" target="_blank"><img class="codepen" src="img/pen.png" alt="codepen"></a></p><br/>
           <div class="row">
 
             <div class="small-12 small-centered columns">
@@ -179,6 +176,7 @@
               <p>Jeżeli chciałbyś nawiązać ze mną współpracę.. bądź też przekazać jakieś cenne uwagi lub po prostu o coś zapytać to zapraszam Cię do kontaktu poprzez jeden z poniższych sposobów.</p>
               <a href="mailto:jakubsnopkiewicz@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
               <a href="https://www.linkedin.com/in/jakub-snopkiewicz-1233b6b3/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              <a href="tel:+48504443519"><i class="fa fa-phone" aria-hidden="true"></i></a>
             </div>
           </div>
         </section>
@@ -202,7 +200,7 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
-    <script src="js/rellax.min.js"></script>
+    <script src="js/fade-in.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
