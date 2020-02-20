@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function generateProducts() {
         const xhr = new XMLHttpRequest();
-        xhr.open('GET', 'http://localhost:3000/list', false);
+        xhr.open('GET', 'js/example.json', false);
         xhr.send(null);
         if (xhr.status == 200) {
             const json = JSON.parse(`{ "list": ${xhr.responseText}}`);
