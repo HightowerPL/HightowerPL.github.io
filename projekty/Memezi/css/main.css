@@ -369,8 +369,8 @@ select {
     .filters > * {
       margin-bottom: 0; }
   .filters__amount {
-    flex: unset;
-    order: unset; } }
+    flex: inherit;
+    order: inherit; } }
 
 .products {
   margin-bottom: 40px;
