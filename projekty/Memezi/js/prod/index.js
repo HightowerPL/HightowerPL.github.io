@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', function () {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'js/example.json', false);
     xhr.send(null);
-    
+
     if (xhr.status == 200) {
-        const json = JSON.parse(xhr.responseText);
-        var products = json.list;
-      l ist.innerHTML = '';
+      var json = JSON.parse(xhr.responseText);
+      var products = json.list;
+      list.innerHTML = '';
 
       for (var i = 0; i < filter.value; i++) {
         if (products[i] != undefined) {
