@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function generateProducts() {
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://localhost:3000/list', false);
+    xhr.open('GET', 'js/example.json', false);
     xhr.send(null);
 
     if (xhr.status == 200) {
-      var json = JSON.parse("{ \"list\": ".concat(xhr.responseText, "}"));
+      var json = JSON.parse(xhr.responseText);
       var products = json.list;
       list.innerHTML = '';
 
