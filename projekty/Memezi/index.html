@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Memezi ZR</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <section class="jumbotron glide">
+                        <div class="jumbotron__clock">
+                            <div class="jumbotron__wrapper">
+                                <p class="jumbotron__text--clock "><span>gorący</span> <br> czwartek</p>
+                                <p class="jumbotron__text--now"><strong>właśnie</strong> trwa!</p>
+                                <div class="jumbtron__delivery">
+                                    <figure class="jumbotron__img-car">
+                                        <img src="css/img/car.png" alt="icon">
+                                    </figure>
+                                    Dostawa <br>gratis
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="jumbotron__discount">
+                            <p class="jumbotron__text--discount">Rabaty nawet do <span class="jumbotron__text--percent">80<span>%</span></span></p>
+                        </div>
+                        <div class="jumbotron__timer">
+                            <div class="jumbotron__timer-content">
+                                <p class="jumbotron__text--lasts">Do końca pozostało: </p>
+                                <div class="jumbotron__timer-wrapper">
+                                    <div class="jumbotron__time js-timer-days">4</div>
+                                    <div class="jumbotron__time js-timer-hours">12</div>
+                                    <div class="jumbotron__time js-timer-minutes">34</div>
+                                    <div class="jumbotron__time js-timer-seconds">23</div>
+                                </div>
+                                <div class="jumbotron__timer--notes"> 
+                                    <span class="jumbotron__text--note">Dni</span>
+                                    <span class="jumbotron__text--note">Godz</span>
+                                    <span class="jumbotron__text--note">Min</span>
+                                    <span class="jumbotron__text--note">SEK</span>
+                                </div>
+                            </div>
+                        </div>
+
+    
+            </section>
+    
+            <section class="filters">
+
+                <p class="filters__text--on-time"> produkty na godzine <span><strong>10:00</strong></span></p>
+
+                <div class="filters__amount">
+                    <label for="showProducts">Pokaż: </label>
+                    <select name="showProducts" class="js-show-products" id="showProducts">
+                        <option value="2" >2</option>
+                        <option value="4" selected>4</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+
+                <p class="filters__text--danger">Akcja "Gorący czwartek"  nie łączy się z innymi promocjami</p>
+
+            </section>
+            
+            <section class="products js-list-products">
+
+            </section>
+        </div>
+
+    </main>
+
+</body>
+<script src="js/prod/index.js"></script>
+
+</html>

@@ -1,0 +1,433 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+body {
+  font-size: 16px;
+  font-weight: 400; }
+
+strong {
+  font-weight: 700; }
+
+.jumbotron {
+  background-color: #ea2423;
+  text-transform: uppercase;
+  text-align: center; }
+
+.jumbotron__text--clock {
+  font-weight: 800;
+  color: white;
+  font-size: 2rem; }
+  .jumbotron__text--clock span {
+    color: #ffef3a; }
+
+.jumbotron__text--now {
+  background-color: #1a171b;
+  color: white;
+  display: inline-block;
+  padding: 1.25rem;
+  font-size: 1rem; }
+  .jumbotron__text--now:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 25px 0 0;
+    border-color: #1a171b transparent transparent transparent;
+    position: absolute;
+    bottom: -14px;
+    left: 0px; }
+
+.jumbtron__delivery {
+  font-size: .875rem;
+  font-weight: 500;
+  text-align: center; }
+
+.jumbotron__text--discount {
+  font-size: 1rem; }
+
+.jumbotron__text--percent {
+  font-size: 7rem;
+  font-weight: 300;
+  color: #ffef3a;
+  display: block; }
+  .jumbotron__text--percent span {
+    font-size: 5rem;
+    vertical-align: top;
+    position: relative;
+    top: 8px; }
+
+.jumbotron__text--lasts {
+  font-weight: 400;
+  font-size: .875rem;
+  margin-bottom: 10px; }
+
+.jumbotron__timer-content {
+  color: white; }
+
+.jumbotron__time {
+  font-size: 2.5rem;
+  font-weight: 700; }
+
+.jumbotron__text--note {
+  color: #1a171b;
+  font-weight: 700; }
+
+.filters__text--on-time {
+  text-transform: uppercase;
+  font-weight: 500; }
+
+.filter__amount {
+  text-transform: uppercase; }
+
+.filters__text--danger {
+  font-size: .675rem;
+  font-weight: 600; }
+
+.product-item__text--discount {
+  text-align: center; }
+
+.product-item__header {
+  font-size: .75rem;
+  font-weight: 600; }
+  .product-item__header > * {
+    text-align: center; }
+
+.product-item__text--stock {
+  display: inline-block;
+  position: relative;
+  margin-left: 5px; }
+
+.product-item__text--discount {
+  color: #ea2423; }
+
+.product-item__text--newPrice, .product-item__text--oldPrice {
+  display: inline-block; }
+
+.product-item__text--newPrice {
+  color: #ea2423;
+  margin-right: 20px; }
+
+.product-item__text--oldPrice {
+  text-decoration: line-through;
+  font-size: .75rem; }
+
+.product-item__text--productName {
+  font-size: .75rem;
+  font-weight: 600;
+  margin-bottom: 5px; }
+
+.product-item__text--producer {
+  color: #9f9f9f;
+  font-weight: 500;
+  font-size: .75rem; }
+
+@media screen and (min-width: 620px) {
+  .jumbotron__text--discount {
+    font-size: 1.125rem; } }
+
+@media screen and (min-width: 1050px) {
+  .jumbotron__clock {
+    font-size: 2.25rem; }
+  .jumbotron__text--discount {
+    text-align: left; }
+  .jumbotron__text--now {
+    font-size: 1.25rem;
+    padding: 20px; }
+  .jumbotron__text--percent {
+    font-size: 8rem; }
+    .jumbotron__text--percent span {
+      font-size: 5rem; } }
+
+.display-other {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  grid-gap: 10px; }
+
+.display-ms {
+  display: flex;
+  flex-wrap: wrap; }
+  .display-ms > * {
+    width: calc(100% * (1/2) - 10px - 1px);
+    margin-right: 7px;
+    margin-bottom: 10px; }
+
+@media screen and (min-width: 769px) {
+  .display-other {
+    grid-template-columns: 1fr 1fr 1fr; }
+  .display-ms > * {
+    width: calc(100% * (1/3) - 15px);
+    margin-right: 10px; } }
+
+@media screen and (min-width: 1050px) {
+  .display-other {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px; }
+  .display-ms > * {
+    width: calc(100% * (1/4) - 22px);
+    margin-right: 20px;
+    margin-bottom: 20px; } }
+
+.jumbotron {
+  overflow: hidden; }
+
+.jumbotron__clock {
+  position: relative;
+  text-align: left;
+  padding: 3rem 2rem;
+  background: url("img/watch.png") no-repeat 10% center;
+  background-size: contain; }
+
+.jumbotron__wrapper {
+  display: inline-block;
+  position: relative; }
+
+.jumbotron__text--now {
+  position: absolute;
+  top: -75%;
+  right: -75%; }
+
+.jumbtron__delivery {
+  background-color: white;
+  text-transform: lowercase;
+  position: absolute;
+  right: -75%;
+  bottom: -125%;
+  transform: rotate(25deg);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; }
+
+.jumbotron__discount {
+  padding: 2rem 1rem 1rem; }
+
+.jumbotron__timer {
+  padding: 2rem; }
+
+.jumbotron__timer-content {
+  border: 2px solid white;
+  padding: 2rem 1rem;
+  max-width: 350px;
+  margin: 0 auto; }
+
+.jumbotron__time {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 700; }
+  .jumbotron__time:not(:last-of-type):before {
+    content: ':';
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    font-size: 1.5rem; }
+
+.jumbotron__timer-wrapper {
+  display: flex; }
+  .jumbotron__timer-wrapper > * {
+    flex: 1; }
+
+.jumbotron__timer--notes {
+  display: flex;
+  margin-top: 10px; }
+  .jumbotron__timer--notes > * {
+    flex: 1; }
+
+@media screen and (min-width: 620px) {
+  .jumbotron {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+  .jumbotron__clock, .jumbotron__discount {
+    flex: 1; }
+  .jumbotron__timer {
+    flex: 100%; }
+  .jumbtron__delivery {
+    right: -55%; } }
+
+@media screen and (min-width: 940px) {
+  .jumbotron__timer {
+    flex: 1; } }
+
+@media screen and (min-width: 1050px) {
+  .jumbotron__clock {
+    padding: 4rem;
+    flex: 2; }
+  .jumbotron__text--now {
+    right: -95%; }
+  .jumbotron__discount {
+    flex: 1; }
+  .jumbotron__timer {
+    flex: 2; }
+  .jumbtron__delivery {
+    bottom: -140%;
+    right: -75%; } }
+
+select {
+  border-radius: 2px;
+  border: 1px solid #ebebeb;
+  padding: 0 10px; }
+
+.filters__text--on-time:before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  background: url("img/clock.png") no-repeat center center;
+  background-size: contain;
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  left: -5px; }
+
+.filters__text--danger:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: url("img/danger.png") no-repeat center center;
+  background-size: contain;
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  left: -3px; }
+
+.product-item__text--stock:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: url("img/cart.png") no-repeat center center;
+  background-size: contain;
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  left: -25px; }
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px; }
+
+.filters__amount {
+  order: 3; }
+
+.filters__text--on-time, .filters__text--danger {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 20px; }
+
+@media screen and (min-width: 710px) {
+  .filters {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+  .filters__amount {
+    flex: 100%; } }
+
+@media screen and (min-width: 900px) {
+  .filters {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .filters > * {
+      margin-bottom: 0; }
+  .filters__amount {
+    flex: unset;
+    order: unset; } }
+
+.products {
+  margin-bottom: 40px;
+  position: relative; }
+
+.product-item {
+  border: 1px solid #ebebeb; }
+
+.product-item__header {
+  display: flex;
+  align-items: center; }
+
+.product-item__stock, .product-item__discount {
+  flex: 1;
+  position: relative; }
+
+.product-item__discount {
+  border: 1px solid #ea2423;
+  padding: 10px; }
+
+.product-item__body {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 210px;
+  position: relative; }
+
+.product-item__img {
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .product-item__img img {
+    width: 100%;
+    height: auto; }
+
+.product-item__footer {
+  padding: 5px; }
+
+.product-item__prices-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px; }
+
+@media screen and (min-width: 500px) {
+  .product-item__footer {
+    padding: 10px; } }
+
+@media screen and (min-width: 1050px) {
+  .product-item__footer {
+    padding: 10px 20px 20px; } }
+
+body, html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-family: 'Montserrat', sans-serif; }
